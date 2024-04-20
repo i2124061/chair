@@ -1,19 +1,3 @@
-/*
-3つのスクリプトに関して
-
-（CountScript.CS = ゲームスクリプト）
-→キー２入力を確認後、開始前アナウンスから最終的なキー４入力回数の計測までを行います。
-
-（MainControl.CS = メインスクリプト）
-→ゲームスクリプトから取得した値を段階で振り分けて、VOICEVOX.CSに送ります。
-
-(VOICEVOX.CS = おしゃべりスクリプト)
-→結果発表アナウンスを喋らせるためのスクリプトです。
-結果発表はリアルタイムで音声を生成するので、VOICEVOXを起動させた状態出ないと音声が再生されません。
-
-現状のスクリプトだとCountScript.CS → MainControl.CS → VOICEVOX.CSの順に動きます。
-*/
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
